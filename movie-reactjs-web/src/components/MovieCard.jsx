@@ -3,7 +3,7 @@ import React from 'react';
 const MovieCard = ({movie: {title, vote_average, poster_path, release_date, popularity, original_language }}) => {
     return (
        <div className='movie-card'>
-            <img src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : "/no-movies.jpg"} alt={title}/>
+            <img src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : "/no-movie.jpg"} alt={title}/>
             <h2 className="mt-4 text-white">
                 {title}
             </h2>
